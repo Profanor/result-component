@@ -15,9 +15,10 @@ body {
     }
 }
 .parent {
+
     border-radius: 25px;
     width: 600px;
-    margin: 20px auto;
+    margin: 80px auto;
     box-shadow: 5px 5px 20px hsla(241, 81%, 54%, 0.3);
 }
 .flex {
