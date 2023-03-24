@@ -1,0 +1,179 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Hanken';
+}
+@font-face {
+    font-family: 'Hanken';
+    src: url('/assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+@media screen and (min-width: 375px) and (max-width: 1440px) {
+    body {
+        display: flexbox;
+        max-width: 1440px;
+        min-width: 375px;
+    }
+}
+.parent {
+    border-radius: 25px;
+    width: 600px;
+    margin: 20px auto;
+    box-shadow: 5px 5px 20px hsla(241, 81%, 54%, 0.3);
+}
+.flex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+}
+.blue-box {
+    border-radius: 25px;
+    background:linear-gradient(0deg,
+    hsl(241, 81%, 54%),
+    hsl(252, 100%, 67%)
+    );
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+}
+.round {
+    text-align: center;
+    background: linear-gradient(0deg,
+    hsla(256, 72%, 46%, 0),
+    hsla(241, 72%, 46%, 1) 
+    );
+    border-radius: 90px;
+    padding: 35px;
+    width: 90px;
+    height: 90px;
+    margin: 30px auto;
+}
+.right {
+    border-radius: 25px;
+    background: white;   
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+}
+.btn {
+    border: none;
+    border-radius: 25px;
+    color: white;
+    height: 45px;
+    width: 95%;
+    background: hsl(224, 30%, 27%);
+    cursor: pointer;
+}
+.btn:hover {
+    background: linear-gradient(0deg,
+    hsl(241, 81%, 54%),
+    hsl(252, 100%, 67%)
+    );
+ }
+.cont {
+    margin: 25px auto;
+    line-height: 25px;
+}
+.cont2 {
+    line-height: 20px;
+}
+.h1  {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(250, 248, 248, 0.644);
+}
+h4 {
+    font-weight: 500;
+    color:  rgba(250, 248, 248, 0.3);
+}
+h5 {
+    font-weight: 500;
+    font-size: 15px;
+    margin: -10px auto;
+    color: rgba(250, 248, 248, 0.644);
+}
+.prg {
+    text-align: center;
+    justify-content: center;
+    line-height: 35px;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+.num {
+    color: white;
+    font-weight: 800;
+    font-size: 55px;
+    text-align: center;
+    justify-content: center;
+    margin: 10px auto;
+}
+.summary {
+    float: left;
+    font-size: 18px;
+}
+.one {
+    text-align: left;
+    border-radius: 10px;
+    width: 80%; 
+    height: 10px;
+    padding: 20px;
+    background: hsla(0, 100%, 67%, 0.06);
+}
+.two {
+    text-align: left;
+    border-radius: 10px;
+    width: 80%;
+    height: 10px;
+    padding: 20px;
+    background: hsla(39, 100%, 56%, 0.06);
+}
+.three {
+    text-align: left;
+    border-radius: 10px;
+    width: 80%;
+    height: 10px;
+    padding: 20px;
+    background: hsla(166, 100%, 37%, 0.06);
+}
+.four {
+    text-align: left;
+    border-radius: 10px;
+    width: 80%;
+    height: 10px;
+    padding: 20px;
+    background: hsla(234, 85%, 45%, 0.06);
+}
+.slash {
+    color: rgba(53, 45, 45, 0.507);
+    font-weight: 700;
+}
+.icon,.rec,.grade {
+    vertical-align: middle;
+}
+.rec {
+    text-align: left;
+    font-weight: 700;
+    color: hsl(0, 100%, 67%) ;
+}
+.rec2 {
+    text-align: left;
+    font-weight: 700;
+    color: hsl(39, 100%, 56%);
+}
+.rec3 {
+    font-weight: 700;
+    text-align: left;
+    color: hsl(166, 100%, 37%);
+}
+.rec4 {
+    font-weight: 700;
+    text-align: left;
+    color: hsl(234, 85%, 45%);
+}
+.grade {
+    float: right;
+    padding:2px;
+    
+}
