@@ -1,7 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    width: 100%;
-    height: 100%;
+    background-color:  #f4f4f4;
+    color: rgba(53, 45, 45, 0.507);
     font-family: 'Hanken','Arial';
+    flex-direction: column;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 @font-face {
     font-family: 'Hanken';
@@ -15,7 +27,7 @@ body {
     }
 }
 .parent {
-
+    background-color: white;
     border-radius: 25px;
     width: 600px;
     margin: 80px auto;
@@ -27,15 +39,20 @@ body {
     justify-content: center;
     align-items: stretch;
 }
+.right {
+    border-radius: 25px;
+    background: white;   
+    padding: 38px;
+    width: 300px;
+}
 .blue-box {
     border-radius: 25px;
     background:linear-gradient(0deg,
     hsl(241, 81%, 54%),
     hsl(252, 100%, 67%)
     );
-    padding: 20px;
+    padding: 40px;
     width: 300px;
-    height: 400px;
     text-align: center;
 }
 .round {
@@ -45,25 +62,21 @@ body {
     hsla(241, 72%, 46%, 1) 
     );
     border-radius: 90px;
-    padding: 35px;
-    width: 90px;
-    height: 90px;
-    margin: 30px auto;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
 }
-.right {
-    border-radius: 25px;
-    background: white;   
-    padding: 20px;
-    width: 300px;
-    height: 400px;
+.button { 
+    margin: 0px auto;
 }
 .btn {
+    background: hsl(224, 30%, 27%);
     border: none;
     border-radius: 25px;
     color: white;
     height: 45px;
-    width: 95%;
-    background: hsl(224, 30%, 27%);
+    width: 100%;
     cursor: pointer;
 }
 .btn:hover {
@@ -73,33 +86,39 @@ body {
     );
  }
 .cont {
-    margin: 25px auto;
-    line-height: 25px;
+    margin: 40px auto;
+    line-height: 33px;
 }
 .cont2 {
-    line-height: 20px;
+    margin: 10px;
+}
+b {
+    color: black;
 }
 .h1  {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     color: rgba(250, 248, 248, 0.644);
 }
-h4 {
-    font-weight: 500;
+h2 {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
     color:  rgba(250, 248, 248, 0.3);
 }
-h5 {
-    font-weight: 500;
+.text h3 {
+    font-weight: 600;
     font-size: 15px;
-    margin: -10px auto;
+    line-height: 20px;
+    padding-top: 10px;
     color: rgba(250, 248, 248, 0.644);
 }
-.prg {
+.grt {
     text-align: center;
     justify-content: center;
-    line-height: 35px;
+    line-height: 40px;
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 600;
     color: white;
 }
 .num {
@@ -111,70 +130,72 @@ h5 {
     margin: 10px auto;
 }
 .summary {
-    float: left;
+    color: black;
     font-size: 18px;
+    margin: 3px auto;
+}
+.reaction h5 {
+    color: hsl(0, 100%, 67%) ;
+    font-size: 15px;
+    margin-top: 2px;
+    padding-left: 8px;
+}
+.memory h5 {
+    color: hsl(39, 100%, 56%);
+    font-size: 15px;
+    margin-top: 2px;
+    padding-left: 8px;
+}
+.verbal h5 {
+    color: hsl(166, 100%, 37%);
+    font-size: 15px;
+    margin-top: 2px;
+    padding-left: 8px;
+}
+.visual h5 {
+    color: hsl(234, 85%, 45%);
+    font-size: 15px;
+    margin-top: 2px;
+    padding-left: 8px;
+}
+.grade h6 {
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 2px;
+    padding-left: 45px;
 }
 .one {
-    text-align: left;
     border-radius: 10px;
-    width: 80%; 
-    height: 10px;
-    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%; 
     background: hsla(0, 100%, 67%, 0.06);
+    padding: 15px;
 }
 .two {
-    text-align: left;
+    box-sizing: border-box;
     border-radius: 10px;
-    width: 80%;
-    height: 10px;
-    padding: 20px;
+    display: flex;
+    width: 100%;
+    padding: 15px;
     background: hsla(39, 100%, 56%, 0.06);
 }
 .three {
-    text-align: left;
     border-radius: 10px;
-    width: 80%;
-    height: 10px;
-    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    padding: 15px;
     background: hsla(166, 100%, 37%, 0.06);
 }
 .four {
-    text-align: left;
     border-radius: 10px;
-    width: 80%;
-    height: 10px;
-    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    padding: 15px;
     background: hsla(234, 85%, 45%, 0.06);
 }
-.slash {
-    color: rgba(53, 45, 45, 0.507);
-    font-weight: 700;
-}
-.icon,.rec,.grade {
-    vertical-align: middle;
-}
-.rec {
-    text-align: left;
-    font-weight: 700;
-    color: hsl(0, 100%, 67%) ;
-}
-.rec2 {
-    text-align: left;
-    font-weight: 700;
-    color: hsl(39, 100%, 56%);
-}
-.rec3 {
-    font-weight: 700;
-    text-align: left;
-    color: hsl(166, 100%, 37%);
-}
-.rec4 {
-    font-weight: 700;
-    text-align: left;
-    color: hsl(234, 85%, 45%);
-}
-.grade {
-    float: right;
-    padding:2px;
-    
-}
+
+
+
