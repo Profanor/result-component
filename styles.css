@@ -6,7 +6,7 @@
 body {
     background-color:  #f4f4f4;
     color: rgba(53, 45, 45, 0.507);
-    font-family: 'Hanken',sans-serif;
+    font-family: 'Hanken','sans-serif';
     flex-direction: column;
     font-weight: 600;
     display: flex;
@@ -17,7 +17,7 @@ body {
 }
 @font-face {
     font-family: 'Hanken';
-    src: url('/assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+    src: url('/assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
 }
 @media screen and (min-width: 375px) and (max-width: 1440px) {
     body {
