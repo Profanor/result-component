@@ -6,7 +6,7 @@
 body {
     background-color:  #f4f4f4;
     color: rgba(53, 45, 45, 0.507);
-    font-family: 'Hanken','Arial';
+    font-family: 'Hanken',sans-serif;
     flex-direction: column;
     font-weight: 600;
     display: flex;
